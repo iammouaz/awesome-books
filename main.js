@@ -12,3 +12,10 @@ submit .addEventListener('click', function (){
     newBook.author = document.getElementById('author').value;
     bookList.push(newBook);
 })
+
+const bookTitle = document.getElementById('title');
+const bookAuthor = document.getElementById('author');
+
+for (let i = 0; i<bookList.length; i++){
+    bookAuthor.innerHTML =  
+}

@@ -9,7 +9,7 @@ function Voks(title, author) {
 }
 
 function saveLocal() {
-    localStorage.setItem('data', JSON.stringify(bookList))
+  localStorage.setItem('data', JSON.stringify(bookList));
 }
 
 function addBook() {

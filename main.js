@@ -41,11 +41,14 @@ function pushContent(){
 
 function removeBook() {
     let removBtn = document.querySelectorAll('.remove');
-    removBtn.forEach (e => {
-        e.addEventListener('click', ()=>{
-            e.parentNode.remove();
+    for (let i = 0; i<removBtn.length; i++){
+        removBtn[i].addEventListener('click', ()=>{
+             bookList.splice(bookList[removBtn[i]],1);
+            removBtn[i].parentNode.remove();
+            console.log(bookList)
         })
-    })
+
+    }
 }
 
 submit.addEventListener('click', ()=>{

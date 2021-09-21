@@ -30,7 +30,7 @@
 
 👤 **Moaz** - Github[@iammouaz](http://github.com/iammouaz)
 
-👤 **Ahmed** - Github[@ahmedadel](ttp://github.com/ahmedadel56)
+👤 **Ahmed** - Github[@ahmedadel](http://github.com/ahmedadel56)
 
 
 

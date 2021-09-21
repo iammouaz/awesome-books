@@ -1,4 +1,5 @@
 const showField = document.querySelector('.books-list');
+const submit = document.getElementById('submit');
 
 let bookList = [];
 
@@ -6,7 +7,6 @@ function Voks(title,author){
     this.title = title;
     this.author = author;
 }
-const submit = document.getElementById('submit');
 
 function addBook(){
     let newBook = new Voks();

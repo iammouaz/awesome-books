@@ -1,14 +1,14 @@
 const showField = document.querySelector('.books-list');
 const submit = document.getElementById('submit');
 
-let bookList = [];
+const bookList = [];
 
-function Voks(title,author){
-    this.title = title;
-    this.author = author;
+function Voks(title, author) {
+  this.title = title;
+  this.author = author;
 }
 
-function addBook(){
+function addBook() {
     let newBook = new Voks();
     newBook.title = document.getElementById('title').value;
     newBook.author = document.getElementById('author').value;

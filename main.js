@@ -21,7 +21,7 @@ function pushContent(){
     document.getElementById('author').value = '';
     bookList.forEach((e)=>{
         let contain = document.createElement('div');
-        contain.id = 'contain'
+        contain.className = 'contain'
         let title = document.createElement('div');
         title.className = 'title';
         let author = document.createElement('div');
@@ -29,6 +29,7 @@ function pushContent(){
         title.innerHTML = e.title;
         author.innerHTML = e.author;
         let remove = document.createElement('button');
+        remove.className = 'remove';
         remove.textContent = 'Remove';
         
         contain.appendChild(title);
@@ -38,7 +39,17 @@ function pushContent(){
     });
 }
 
+function removeBook() {
+    let removBtn = document.querySelectorAll('.remove');
+    removBtn.forEach (e => {
+        e.addEventListener('click', ()=>{
+            e.parentNode.remove();
+        })
+    })
+}
+
 submit.addEventListener('click', ()=>{
     addBook();
     pushContent();
+    removeBook();
 });

@@ -1,5 +1,4 @@
-const list = document.getElementById('list');
-const addNew = document.getElementById('add-new');
+/* eslint max-classes-per-file: ["error", 2] */
 class Book {
   constructor(title, author) {
     this.title = title;
@@ -22,12 +21,14 @@ class AllBooks {
   constructor() {
     this.data = [];
   }
+
   addBook(title, author) {
     this.data.push(new Book(title, author));
     document.getElementById('Title').value = '';
     document.getElementById('Author').value = '';
     this.refresh();
   }
+
   refresh() {
     bookList.innerHTML = '';
     localStorage.setItem('books', JSON.stringify(this.data));
@@ -37,7 +38,6 @@ class AllBooks {
       },
     );
   }
-
 }
 const BooksList = new AllBooks();
 bookList.addEventListener('click', (e) => {
@@ -46,17 +46,15 @@ bookList.addEventListener('click', (e) => {
     tgt.closest('li').remove();
   }
 
-window.onload = () => {
-  if (localStorage.getItem('books') === null) {
-    localStorage.setItem('books', JSON.stringify([]));
-  } else {
-    BooksList.data = JSON.parse(localStorage.books);
-    BooksList.refresh();
-  }
-};
+  window.onload = () => {
+    if (localStorage.getItem('books') === null) {
+      localStorage.setItem('books', JSON.stringify([]));
+    } else {
+      BooksList.data = JSON.parse(localStorage.books);
+      BooksList.refresh();
+    }
+  };
 }, false);
 document.getElementById('btnAdd').addEventListener('click', () => {
   BooksList.addBook(document.getElementById('Title').value, document.getElementById('Author').value);
 }, false);
-
-

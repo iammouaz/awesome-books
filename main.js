@@ -8,6 +8,10 @@ function Voks(title, author) {
   this.author = author;
 }
 
+function saveLocal() {
+    localStorage.setItem('data', JSON.stringify(bookList))
+}
+
 function addBook() {
   const newBook = new Voks();
   newBook.title = document.getElementById('title').value;
@@ -36,6 +40,7 @@ function pushContent() {
     contain.appendChild(author);
     contain.appendChild(remove);
     showField.appendChild(contain);
+    saveLocal();
   });
 }
 
@@ -45,6 +50,7 @@ function removeBook() {
     removBtn[i].addEventListener('click', () => {
       bookList.splice(bookList[removBtn[i]], 1);
       removBtn[i].parentNode.remove();
+      saveLocal();
     });
   }
 }

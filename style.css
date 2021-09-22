@@ -40,6 +40,10 @@ button {
   background-color: white !important;
   border-radius: 5px;
   width: 100px;
+  height: 30px;
+  margin-bottom: 20px;
+  position: relative;
+  bottom: 6px;
 }
 
 .underline {

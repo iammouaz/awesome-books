@@ -3,3 +3,67 @@ body {
   flex-direction: column;
   align-items: center;
 }
+
+#list {
+  display: flex;
+  width: 550px;
+  border: 3px solid ;
+}
+
+#booklist li{
+  padding-top: 10px;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-left: -55px;
+  /* border: 2px solid red; */
+  width: 590px;
+  height: 25px;
+  font-style: italic;
+  font-weight: 600;
+  padding-left: 10px;
+  margin-right: -12px;
+  padding-right: 10px;
+}
+
+legend {
+  margin-left: 240px;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+#booklist :nth-of-type(odd){
+  background-color: gray;
+}
+
+button {
+  background-color: white !important;
+  border-radius: 5px;
+  width: 100px;
+}
+
+.underline {
+  width: 240px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+#add-new {
+  width: 390px;
+}
+
+#add-new legend {
+  margin-left: 120px;
+}
+
+.form {
+  margin-bottom: 10px;
+  border: 2px solid black;
+  margin-left: 90px;
+}
+
+#btnAdd {
+  margin-left: 300px;
+  border: 3px solid black;
+}

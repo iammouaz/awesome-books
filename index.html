@@ -1,29 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
     <title>Awesome Books</title>
-</head>
-<body>
-    <h1 class="title">Awesome Books</h1>
- <div class="container">
-     <fieldset id="books-list" class="books-list">
-<legend><h2>Books</h2></legend>
-     </fieldset>
-     
-     <fieldset class="add-book">
-        <legend><h2>Add Books</h2></legend>
-        <input id="title" type="text" placeholder="Book Title" required><br>
-        <input id="author" type="text" placeholder="Book Author" required>
-        <button type="submit" id="submit">Add</button>
-             </fieldset>
-     
-
- </div>
-    
- <script src="./main.js"></script>
-</body>
+  </head>
+  <body>
+    <h1>Awesome Books</h1>
+    <fieldset  id="list">
+      <legend>Books</legend>
+      <div class="black-border">
+        <ul id="booklist" class="flex-center">
+        </ul>
+      </div>
+    </fieldset>
+    <fieldset id="add-new">
+        <legend>Add books</legend>
+        <input type="text" id="Title" required placeholder="Book Title">
+        <input type="text" id="Author" required placeholder="Book Author">
+        <button id="btnAdd" type="button">Add</button>
+    </fieldset>
+    <script src="./main.js"></script>
+  </body>
 </html>

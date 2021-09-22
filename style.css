@@ -8,22 +8,31 @@ body {
   display: flex;
   width: 550px;
   border: 3px solid;
+  padding: 20px;
+  padding-top: 0;
+}
+
+#booklist {
+  word-spacing: 10px;
+  padding: 0;
 }
 
 #booklist li {
-  padding-top: 10px;
   list-style: none;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  margin-left: -55px;
+  margin: auto;
   width: 590px;
   height: 25px;
   font-style: italic;
   font-weight: 600;
-  padding-left: 10px;
-  margin-right: -12px;
+  font-size: 20px;
+  padding-top: 10px;
   padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+
 }
 
 legend {
@@ -33,7 +42,7 @@ legend {
 }
 
 #booklist :nth-of-type(odd) {
-  background-color: gray;
+  background-color: #ddd;
 }
 
 button {

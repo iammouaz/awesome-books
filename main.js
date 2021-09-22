@@ -1,6 +1,7 @@
 /* eslint max-classes-per-file: ["error", 2] */
 class Book {
   constructor(title, author) {
+    this.id = (new Date()).getTime();
     this.title = title;
     this.author = author;
   }
@@ -29,6 +30,11 @@ class AllBooks {
     this.refresh();
   }
 
+  removeBook(id) {
+    this.data = this.data.filter((el) => el.id !== id);
+    this.refresh();
+  }
+
   refresh() {
     bookList.innerHTML = '';
     localStorage.setItem('books', JSON.stringify(this.data));
@@ -44,17 +50,19 @@ bookList.addEventListener('click', (e) => {
   const tgt = e.target;
   if (tgt.tagName === 'BUTTON') {
     tgt.closest('li').remove();
+    BooksList.removeBook(parseInt(tgt.closest('li').id, 10));
   }
-
-  window.onload = () => {
-    if (localStorage.getItem('books') === null) {
-      localStorage.setItem('books', JSON.stringify([]));
-    } else {
-      BooksList.data = JSON.parse(localStorage.books);
-      BooksList.refresh();
-    }
-  };
 }, false);
+
 document.getElementById('btnAdd').addEventListener('click', () => {
   BooksList.addBook(document.getElementById('Title').value, document.getElementById('Author').value);
 }, false);
+
+window.onload = () => {
+  if (localStorage.getItem('books') === null) {
+    localStorage.setItem('books', JSON.stringify([]));
+  } else {
+    BooksList.data = JSON.parse(localStorage.books);
+    BooksList.refresh();
+  }
+};

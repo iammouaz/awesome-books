@@ -79,6 +79,6 @@ const sections = document.querySelectorAll('section');
 for (let i = 0; i< link.length ;i+=1){
   link[i].addEventListener('click', ()=> {
     sections.forEach((e)=> e.style.display = 'none')
-    sections[i].style.display = 'block';
+    sections[i].style.display = 'flex';
   })
 }

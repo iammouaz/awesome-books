@@ -78,6 +78,10 @@ nav ul li hr {
   padding: 0;
 }
 
+.books-list, .contact {
+  flex-direction: column  ;
+}
+
 #booklist li {
   list-style: none;
   display: flex;
@@ -136,12 +140,13 @@ button {
 
 
 footer {
-  width: 99%;
+  width: 98%;
   height: 3rem;
   border: 3px solid #000;
   display: flex;
   align-items: center;
-  position: relative;
-  bottom: -100px;
+  position: fixed;
+  bottom: 12px;
   padding-left: 1rem;
+  margin: auto;
 }

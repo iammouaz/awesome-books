@@ -37,7 +37,7 @@ nav h2 {
 
 nav ul {
   display: flex;
-  flex: 2 1;
+  flex: 2 2;
   justify-content: flex-end;
   align-items: center;
   height: 100%;
@@ -67,7 +67,6 @@ nav ul li hr {
 
 #list {
   display: flex;
-  width: 550px;
   border: 3px solid;
   padding: 20px;
   padding-top: 0;
@@ -137,24 +136,12 @@ button {
   margin-left: 5px;
 }
 
-footer {
-  width: 97%;
-  height: 3rem;
-  border: 3px solid #000;
-  display: flex;
-  align-items: center;
-  position: fixed;
-  bottom: 12px;
-  padding-left: 1rem;
-  margin: auto;
-}
-
 .time {
-  left: 83%;
   font-size: 13px;
-  position: relative;
   font-weight: 700;
-  width: 17%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .contact-us {
@@ -210,4 +197,15 @@ footer {
 .contact-info {
   padding: 93px;
   display: flex;
+}
+
+footer {
+  width: 95%;
+  height: 3rem;
+  border: 3px solid #000;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  bottom: 12px;
+  padding-left: 1rem;
 }

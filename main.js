@@ -66,3 +66,19 @@ window.onload = () => {
     BooksList.refresh();
   }
 };
+
+// Single page phase
+
+const linkContent = document.querySelectorAll('.add-new, .contact');
+linkContent.forEach((e)=> e.style.display = 'none');
+
+
+const link = document.querySelectorAll('a');
+const sections = document.querySelectorAll('section');
+
+for (let i = 0; i< link.length ;i+=1){
+  link[i].addEventListener('click', ()=> {
+    sections.forEach((e)=> e.style.display = 'none')
+    sections[i].style.display = 'block';
+  })
+}

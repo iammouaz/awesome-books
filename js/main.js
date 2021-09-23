@@ -1,4 +1,13 @@
 /* eslint max-classes-per-file: ["error", 2] */
+// Add Time Stamp
+
+const showDate = () => {
+// eslint-disable-next-line no-undef
+  const { DateTime } = luxon;
+  const date = document.getElementById('date');
+  date.innerText = DateTime.now().toLocaleString(DateTime.DATETIME_FULL);
+};
+
 class Book {
   constructor(title, author) {
     this.id = (new Date()).getTime();
@@ -59,6 +68,7 @@ document.getElementById('btnAdd').addEventListener('click', () => {
 }, false);
 
 window.onload = () => {
+  showDate();
   if (localStorage.getItem('books') === null) {
     localStorage.setItem('books', JSON.stringify([]));
   } else {

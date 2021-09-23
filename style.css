@@ -3,9 +3,8 @@
 }
 
 body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  font-family: cursive;
+  font-weight: 500;
 }
 
 h2 {
@@ -81,7 +80,10 @@ nav ul li hr {
 
 .books-list,
 .contact {
+  display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 #booklist li {
@@ -114,34 +116,29 @@ legend {
 button {
   background-color: white !important;
   height: 30px;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
   position: relative;
   bottom: 6px;
   box-shadow: 5px 5px black;
   border: 4px solid black;
+  margin-left: 8%;
 }
 
 #add-new {
-  width: 390px;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  margin-left: -6%;
   align-items: center;
+  justify-content: center;
 }
 
 .form {
   border: 4px solid black;
-  margin-left: 90px;
-}
-
-#btnAdd {
-  margin-left: 53%;
-  margin-top: 10px;
-  width: 15%;
+  margin-left: 5px;
 }
 
 footer {
-  width: 98%;
+  width: 97%;
   height: 3rem;
   border: 3px solid #000;
   display: flex;
@@ -150,4 +147,67 @@ footer {
   bottom: 12px;
   padding-left: 1rem;
   margin: auto;
+}
+
+.time {
+  left: 83%;
+  font-size: 13px;
+  position: relative;
+  font-weight: 700;
+  width: 17%;
+}
+
+.contact-us {
+  display: flex;
+}
+
+.reach-out {
+  gap: 0;
+  list-style-type: none;
+  display: flex;
+  flex-flow: wrap;
+}
+
+.moaz {
+  background-image: url(./img/iammouaz.jpg);
+  background-repeat: no-repeat;
+  width: 52px;
+  height: 7%;
+  max-width: 101px;
+  position: absolute;
+  background-size: contain;
+  padding: 15px;
+  border-radius: 50%;
+  left: 3%;
+}
+
+.mutinhiri {
+  background-image: url(./img/mutinhiri.png);
+  background-repeat: no-repeat;
+  width: 52px;
+  height: 7%;
+  max-width: 101px;
+  position: absolute;
+  background-size: contain;
+  padding: 15px;
+  border-radius: 50%;
+  left: 67%;
+}
+
+.ahmed {
+  background-image: url(./img/ahmedadel56.jpg);
+  background-repeat: no-repeat;
+  width: 53px;
+  height: 7%;
+  max-width: 101px;
+  position: absolute;
+  background-size: contain;
+  padding: 15px;
+  border-radius: 50%;
+  left: 36%;
+}
+
+.contact-info {
+  padding: 93px;
+  display: flex;
 }

@@ -146,6 +146,9 @@ button {
 
 .contact-us {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px;
 }
 
 .reach-out {
@@ -158,45 +161,35 @@ button {
 .moaz {
   background-image: url(./img/iammouaz.jpg);
   background-repeat: no-repeat;
-  width: 52px;
-  height: 7%;
-  max-width: 101px;
-  position: absolute;
-  background-size: contain;
-  padding: 15px;
+  width: 50%;
+  height: 50%;
+  background-size: cover;
   border-radius: 50%;
-  left: 3%;
 }
 
 .mutinhiri {
   background-image: url(./img/mutinhiri.png);
   background-repeat: no-repeat;
-  width: 52px;
-  height: 7%;
-  max-width: 101px;
-  position: absolute;
-  background-size: contain;
-  padding: 15px;
+  width: 10%;
+  height: 50%;
+  background-size: cover;
   border-radius: 50%;
-  left: 67%;
 }
 
 .ahmed {
   background-image: url(./img/ahmedadel56.jpg);
   background-repeat: no-repeat;
-  width: 53px;
-  height: 7%;
-  max-width: 101px;
-  position: absolute;
-  background-size: contain;
-  padding: 15px;
+  width: 50%;
+  height: 50%;
+  background-size: cover;
   border-radius: 50%;
-  left: 36%;
 }
 
-.contact-info {
-  padding: 93px;
+.contact-info ul {
   display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin-top: 40px;
 }
 
 footer {

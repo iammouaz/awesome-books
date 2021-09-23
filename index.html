@@ -7,21 +7,50 @@
     <title>Awesome Books</title>
   </head>
   <body>
-    <h1>Awesome Books</h1>
-    <fieldset  id="list">
-      <legend>Books</legend>
-      <div class="black-border">
-        <ul id="booklist" class="flex-center">
+    <header class="header">
+      <nav class="nav">
+        <h2>Awesome Books</h2>
+        <ul class="menu">
+          <li> <a href="#">List</a> <hr></li>          
+          <li><a href="#">Add New</a> <hr></li>
+          <li><a href="#">Contact</a></li>
         </ul>
-      </div>
-    </fieldset>
-    <hr class="underline"> 
-    <div id="add-new">
-        <h2>Add a new books</h2>
+      </nav>
+    </header>
+    <section class="books-list">
+      <h1>All Awesome Books</h1>
+      <fieldset  id="list">
+        <legend>Books</legend>
+        <div class="black-border">
+          <ul id="booklist" class="flex-center">
+          </ul>
+        </div>
+      </fieldset>
+    </section>
+    <section id="add-new">
+        <h1>Add a new books</h1>
         <input type="text" id="Title" class="form" required placeholder="Book Title"><br>
         <input type="text" id="Author"  class="form" required placeholder="Book Author"><br>
         <button id="btnAdd" type="button">Add</button>
-    </div>
+    </section>
+    <section class="contact">
+      <h1>
+        Contact information
+      </h1>
+      <p>
+        Do have any questions or you just want to say "Hello"?<br>
+        you can reach out to us!
+      </p>
+      <ul class="reach-out">
+        <li>Our e-mail: </li>
+        <li>Our phone number: </li>
+        <li>Our adress: </li>
+      </ul>
+    </section>
+
+    <footer class="copy-right">
+      Copyright ...
+    </footer>
     <script src="./main.js"></script>
   </body>
 </html>

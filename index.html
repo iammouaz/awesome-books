@@ -7,21 +7,69 @@
     <title>Awesome Books</title>
   </head>
   <body>
-    <h1>Awesome Books</h1>
-    <fieldset  id="list">
-      <legend>Books</legend>
-      <div class="black-border">
-        <ul id="booklist" class="flex-center">
+    <header class="header">
+      <nav class="nav">
+        <h2>Awesome Books</h2>
+        <ul class="menu">
+          <li> <a href="#">List</a> <hr></li>          
+          <li><a href="#add-new">Add New</a> <hr></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
-      </div>
-    </fieldset>
-    <hr class="underline"> 
-    <div id="add-new">
-        <h2>Add a new books</h2>
+      </nav>
+    </header>
+    <p class="time" id="date"></p>
+    <section class="books-list">
+      <h1>All Awesome Books</h1>
+      <fieldset  id="list">
+        <legend>Books</legend>
+        <div class="black-border">
+          <ul id="booklist" class="flex-center">
+          </ul>
+        </div>
+      </fieldset>
+    </section>
+    <section class="add-new" id="add-new">
+        <h1>Add a new books</h1>
         <input type="text" id="Title" class="form" required placeholder="Book Title"><br>
         <input type="text" id="Author"  class="form" required placeholder="Book Author"><br>
         <button id="btnAdd" type="button">Add</button>
+    </section>
+    <section class="contact" id="contact">
+      <h1>
+        Contact information
+      </h1>
+      <p>
+        Do have any questions or you just want to say "Hello"?<br>
+        you can reach out to us!
+      </p>
+      <div class="contact-us">
+      <div class="contact-info">
+      <ul class="reach-out">
+        <li>Moaz's e-mail: <a href="mailto:moazmulki33@gmail.com">moazmulki33@gmail.com</a></li>
+        <li>Moaz's phone number: +963 960 694 292 </li>
+        <li>Moaz's Adress: Damascus, Syria </li>
+      </ul>
     </div>
-    <script src="./main.js"></script>
+    <div class="contact-info">
+      <ul class="reach-out">
+        <li>Ahmad's e-mail: <a href="mailto:ahmdadl563@gmail.com">ahmdadl563@gmail.com</a></li>
+        <li>Ahmad's phone number:+201064934399</li>
+        <li>Ahmad's adress:Cairo Egypt</li>
+      </ul>
+    </div>
+    <div class="contact-info">
+      <ul class="reach-out">
+        <li>Bunbee's e-mail:<a href="mailto:barnabmutinhiri@gmail.com">barnabmutinhiri@gmail.com</a> </li>
+        <li>Bunbee's phone number:+263771066268</li>
+        <li>Bunbee's adress: West Kadoma Zimbabwe</li>
+      </ul>
+    </div>
+    </div>
+  </section>
+  <footer class="copy-right">
+    All Copyright reserved
+  </footer>
+    <script src="./js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/luxon/2.0.2/luxon.min.js" integrity="sha512-frUCURIeB0OKMPgmDEwT3rC4NH2a4gn06N3Iw6T1z0WfrQZd7gNfJFbHrNsZP38PVXOp6nUiFtBqVvmCj+ARhw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   </body>
 </html>
